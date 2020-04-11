@@ -18,11 +18,11 @@ public:
 	void wait() {
 		uint16_t diff;
 		do {
-			diff = (micros() & 0xFFFF) - mLastMicros;
+			diff = (arduino::micros() & 0xFFFF) - mLastMicros;
 		} while(diff < WAIT);
 	}
 
-	void mark() { mLastMicros = micros() & 0xFFFF; }
+	void mark() { mLastMicros = arduino::micros() & 0xFFFF; }
 };
 
 
