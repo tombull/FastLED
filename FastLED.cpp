@@ -1,6 +1,7 @@
 #define FASTLED_INTERNAL
 #include "FastLED.h"
 
+using namespace arduino;
 
 #if defined(__SAM3X8E__)
 volatile uint32_t fuckit;
