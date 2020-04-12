@@ -37,6 +37,7 @@
 
 
 #include <nrf.h>
+#include <nrf_gpio.h>
 #include <nrf_spim.h>   // for FastSPI
 #include <nrf_pwm.h>    // for Clockless
 #include <nrf_nvic.h>   // for Clockless / anything else using interrupts
