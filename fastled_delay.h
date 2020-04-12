@@ -18,11 +18,11 @@ public:
 	void wait() {
 		uint16_t diff;
 		do {
-			diff = (micros() & 0xFFFF) - mLastMicros;
+			diff = (this->micros() & 0xFFFF) - mLastMicros;
 		} while(diff < WAIT);
 	}
 
-	void mark() { mLastMicros = micros() & 0xFFFF; }
+	void mark() { mLastMicros = this->micros() & 0xFFFF; }
 };
 
 
